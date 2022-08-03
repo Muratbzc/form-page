@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./2432.jpg_860.jpg);
+  opacity: 0.95;
+}
+
+h1 {
+  color: rgb(34, 31, 204);
+  text-align: center;
+  height: 50px;
+  padding-top: 30px;
+}
+
+body form {
+  background-color: azure;
+  width: 70%;
+  margin: auto;
+  padding: 0 40px;
+}
+
+body form div fieldset {
+  padding: 10px 20px;
+}
+
+label {
+  display: inline-block;
+  width: 250px;
+  font: 1.4em sans-serif;
+}
+
+div {
+  padding-top: 10px;
+}
+
+.yaş {
+  display: flex;
+}
+
+.yaş div label {
+  font-size: 1em;
+}
+
+.yaş-başlık {
+  padding-top: 35px;
+}
+
+.dal {
+  display: flex;
+}
+.dal label {
+  padding-top: 20px;
+}
+
+.kvk label {
+  width: 70%;
+  font-size: smaller;
+}
+
+.sözleşme label {
+  width: 70%;
+  font-size: smaller;
+}
+
+.buton {
+  text-align: center;
+}
+
+.buton input {
+  color: white;
+  background-color: blue;
+  margin-right: 30px;
+  width: 100px;
+  height: 30px;
+  align-items: center;
+}
+
+.kişisel {
+  line-height: 2.5em;
+}

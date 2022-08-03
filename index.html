@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahhale Spor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Mahalle Spor Üyelik ve Kayıt Formu</h1>
+
+    <form action="" method="get">
+      <div class="kişisel">
+        <fieldset>
+          <legend>Kişisel bilgiler</legend>
+          <label for="tc">TC Kimlik No</label>
+          <input type="text" name="Kimlik_no" id="tc" /><br />
+          <label for="isim">Ad</label>
+          <input type="text" name="isim" id="isim" /><br />
+          <label for="soyisim">Soyad</label>
+          <input type="text" name="soyisim" id="soyisim" /><br />
+          <label for="yaş">Yaş</label>
+          <input type="number" name="yaş" id="yaş" min="0" max="100" /><br />
+          <label for="mail">Mail Adresi</label>
+          <input type="email" name="mail" id="mail" /><br />
+          <label for="foto">Fotoğraf Ekle</label>
+          <input type="file" name="foto" id="foto" />
+        </fieldset>
+      </div>
+      <div class="diğer">
+        <fieldset>
+          <legend>Diğer Bilgiler</legend>
+          <label for="tarih">Başlangıç Tarihi</label>
+          <input type="date" name="başlangıç_tarih" id="tarih" /><br />
+
+          <div class="yaş">
+            <label class="yaş-başlık">Yaş Grubu</label>
+
+            <div>
+              <input type="checkbox" name="Yaş_grubu" id="grup" />
+              <label for="grup">0-6 Yaş</label><br />
+              <input type="checkbox" name="Yaş_grubu" id="grup" />
+              <label for="grup">6-12 Yaş</label><br />
+              <input type="checkbox" name="Yaş_grubu" id="grup" />
+              <label for="grup">12-18 Yaş</label><br />
+              <input type="checkbox" name="Yaş_grubu" id="grup" />
+              <label for="grup">18-24 Yaş</label><br />
+            </div>
+          </div>
+
+          <div class="dal">
+            <label for="branş">İlgilendiğin Spor Dalları</label>
+            <select name="seçilen_spor" id="branş" size="4" multiple>
+              <option value="Futbol">Futbol</option>
+              <option value="Basketbol">Basketbol</option>
+              <option value="Voleybol">Voleybol</option>
+              <option value="Tenis">Tenis</option>
+              <option value="Yüzme">Yüzme</option>
+            </select>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="kvk">
+        <fieldset>
+          <legend>KVK Aydınlatma Metni</legend>
+
+          <textarea
+            name=""
+            id="kvk"
+            cols="100"
+            rows="10"
+            style="resize: none"
+            placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam est, maiores voluptatem pariatur minima quidem, libero ullam ad nobis dolor eos laborum nisi tempora facere officiis aliquid adipisci voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorum dolores dignissimos quo unde. Sed eligendi nulla dolores suscipit fugit deleniti placeat aliquam, pariatur officiis explicabo animi expedita impedit facilis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur architecto eum ipsum minima sint possimus nesciunt porro temporibus, assumenda quis quidem sed, a vitae veniam, amet voluptas omnis. Velit, quam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, consequatur! Assumenda, in eius ipsa corrupti dicta molestiae dolor ex ipsam consequatur tenetur eligendi accusantium exercitationem quis esse cum nostrum debitis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, natus! Dolorem accusamus ea, suscipit libero non odit ut minus culpa illum necessitatibus rem, earum facilis error quod sint voluptates mollitia! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, sunt. Perferendis autem iste nobis fuga id, laboriosam obcaecati repellat sed doloremque consequuntur ducimus temporibus animi vel sint, accusantium ab. Natus!"
+          ></textarea
+          ><br />
+          <input type="radio" name="onay" id="onay" />
+          <label for="onay">Aydınlatma metnini okudum onaylıyorum.</label>
+        </fieldset>
+      </div>
+
+      <div class="sözleşme">
+        <fieldset>
+          <legend>Sözleşme Kopyası</legend>
+          <input type="radio" name="Talep" id="Kopya" value="istiyorum" />
+          <label for=""
+            >Sözleşmenin kopyasını mail olarak gönderilmesini istiyorum.</label
+          ><br />
+          <input type="radio" name="Talep" id="Kopya" value="istemiyorum" />
+          <label for=""
+            >Sözleşmenin kopyasını mail olarak gönderilmesini
+            istemiyorum.</label
+          >
+        </fieldset>
+      </div>
+
+      <br /><br />
+      <div class="buton">
+        <input type="submit" value="GÖNDER" />
+        <input type="reset" value="TEMİZLE" />
+      </div>
+      <br /><br /><br />
+    </form>
+  </body>
+</html>
